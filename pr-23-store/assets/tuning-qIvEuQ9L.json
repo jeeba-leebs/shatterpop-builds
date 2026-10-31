@@ -1,0 +1,120 @@
+{
+  "board": { "cols": 8, "rows": 10 },
+  "gummy": { "setTurns": 4, "agePerPlacement": 1, "colors": 5 },
+  "crystal": { "cap": 8, "hitsToShatter": 2, "hitsPerLine": 1 },
+  "splash": { "hits": 1, "orthogonalOnly": true, "skipCellsOnClearingLine": true },
+  "pity": { "crystals": 6, "placements": 3, "grant": 1, "stockAtMost": 0, "oncePerRun": true },
+  "bomb": { "size": 4, "anchorInset": 1, "perRun": 2 },
+  "icebreaker": {
+    "perRun": 4,
+    "connectOrthogonal": true,
+    "chain": {
+      "pointsPerCrystal": 50,
+      "pointsPerGummy": 0,
+      "flatBonus": 100,
+      "baseMultiplier": 1,
+      "smallGroupMin": 3,
+      "smallGroupMax": 5,
+      "smallGroupMultiplier": 1,
+      "largeGroupMin": 6,
+      "largeGroupMultiplier": 1,
+      "multiplierCap": null,
+      "cellsPerCoin": 2,
+      "coinsEach": 0,
+      "coinCap": null
+    }
+  },
+  "scoring": { "linePoints": 10, "shatterPoints": 50 },
+  "tray": { "slots": 3 },
+  "shop": { "icebreakerPrice": null, "bombPrice": null },
+  "coins": { "starting": 0, "perLine": 0, "perShatter": 0 },
+  "perks": { "coinBonusPercent": 0, "freePowerUpsPerRun": 0 },
+  "sandbox": {
+    "shop": { "icebreakerPrice": 120, "bombPrice": 150 },
+    "rewardedAdCoins": 40,
+    "coins": { "starting": 300, "perLine": 10, "perShatter": 25 },
+    "chain": { "cellsPerCoin": 2, "coinsEach": 5, "coinCap": 40 },
+    "qaGrantCoins": 500,
+    "removeAds": { "id": "remove-ads", "label": "Remove Ads" },
+    "packs": [
+      { "id": "handful", "label": "Handful", "coins": 250 },
+      { "id": "pouch", "label": "Pouch", "coins": 700 },
+      { "id": "sack", "label": "Sack", "coins": 1600 }
+    ]
+  },
+  "store": {
+    "startingCoins": 300,
+    "runEnd": { "scorePerCoin": 100, "cap": 60, "bestBonus": 10 },
+    "levelUp": { "coins": 50, "scorePerLevel": 1000 },
+    "dailyGift": [25, 35, 50, 50, 75, 75, 150],
+    "rewarded": { "coins": 40, "perDay": 5, "cooldownMs": 180000, "seconds": 5 },
+    "share": { "coins": 100, "perDay": 1, "link": "https://shatterpop.test/play" },
+    "tools": {
+      "icebreaker": { "price": 120, "built": true, "cap": 4 },
+      "bomb": { "price": 150, "built": true, "cap": 2 },
+      "hint": { "price": 40, "built": false, "cap": 0 },
+      "undo": { "price": 60, "built": false, "cap": 0 },
+      "swap": { "price": 80, "built": false, "cap": 0 },
+      "icebreakerPack": 306,
+      "bombPack": 383,
+      "packSize": 3
+    },
+    "upgrades": {
+      "coinMagnet": { "percentPerLevel": 5, "maxPercent": 25, "costs": [300, 600, 1200, 2400, 4000] },
+      "starterKit": { "freeCap": 2, "costs": [400, 800, 1600, 3000, 5000] },
+      "slowSet": { "splashPercent": 5, "costs": [500, 1000, 2000, 3500, 6000] },
+      "biggerBomb": { "percentPerLevel": 10, "costs": [250, 500, 1000, 2000, 3500] },
+      "ripple": { "percentPerLevel": 10, "clearRingAt": 5, "costs": [350, 700, 1400, 2800, 5000] }
+    },
+    "packs": [
+      { "id": "coins-500", "label": "500 coins", "priceLabel": "$0.99", "cents": 99, "coins": 500, "tag": "" },
+      { "id": "coins-3000", "label": "3,000 coins", "priceLabel": "$4.99", "cents": 499, "coins": 3000, "tag": "+20%" },
+      { "id": "coins-7000", "label": "7,000 coins", "priceLabel": "$9.99", "cents": 999, "coins": 7000, "tag": "Best value" },
+      { "id": "coins-15000", "label": "15,000 coins", "priceLabel": "$19.99", "cents": 1999, "coins": 15000, "tag": "" },
+      { "id": "coins-40000", "label": "40,000 coins", "priceLabel": "$49.99", "cents": 4999, "coins": 40000, "tag": "" }
+    ],
+    "bundles": [
+      {
+        "id": "crystal-starter",
+        "label": "Crystal Starter",
+        "priceLabel": "$4.99",
+        "cents": 499,
+        "coins": 1000,
+        "icebreakers": 2,
+        "bombs": 2,
+        "comingSoon": ["Shard unlock", "Cozy Scarf", "Beanie", "Lantern"],
+        "characterName": ""
+      },
+      {
+        "id": "gilded-royal",
+        "label": "Gilded Royal",
+        "priceLabel": "$9.99",
+        "cents": 999,
+        "coins": 3000,
+        "icebreakers": 4,
+        "bombs": 3,
+        "comingSoon": ["Gold Leaf palette", "Tuxedo", "Penny Topper", "Tiny Hammer"],
+        "characterName": "Gilt"
+      }
+    ],
+    "removeAds": { "id": "remove-ads", "label": "Remove Ads", "priceLabel": "$3.99", "cents": 399, "bonusCoins": 500, "colorFlag": "goldSprout" },
+    "checkoutLabel": "TEST PURCHASE - no money charged",
+    "adLabel": "TEST AD"
+  },
+  "characters": [],
+  "shapes": {
+    "single": 4,
+    "domino": 5,
+    "bar3": 4,
+    "bar4": 3,
+    "bar5": 1,
+    "square": 4,
+    "rect": 2,
+    "square3": 1,
+    "l3": 4,
+    "l4": 3,
+    "t": 3,
+    "s": 3,
+    "l5": 1
+  }
+}
